@@ -11,5 +11,5 @@ macOS 10.12+
 
 ## Installation
 
-you can download it from the [Release Page]()
+you can download it from the [Release Page](https://github.com/HansonStudio/PathToGo/releases)
 
