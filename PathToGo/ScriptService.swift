@@ -1,5 +1,5 @@
 //
-//  AppWorker.swift
+//  ScriptService.swift
 //  PathToGo
 //
 //  Created by Hanson on 2018/1/23.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-struct AppWorker {
+struct ScriptService {
     
     static func copyCurrentFinderPath() {
         guard let scriptUrl = Bundle.main.url(forResource: "copyCurrentPath", withExtension: "scpt"),

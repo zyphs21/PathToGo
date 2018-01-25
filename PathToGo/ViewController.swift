@@ -13,7 +13,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        AppWorker.copyCurrentFinderPath()
+        ScriptService.copyCurrentFinderPath()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
             NSApplication.shared.terminate(self)

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C06223462016CCE500724C4C /* AppWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06223452016CCE500724C4C /* AppWorker.swift */; };
+		C06223462016CCE500724C4C /* ScriptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06223452016CCE500724C4C /* ScriptService.swift */; };
 		C06223472016CD7F00724C4C /* copyCurrentPath.scpt in Resources */ = {isa = PBXBuildFile; fileRef = C06223442016CC7D00724C4C /* copyCurrentPath.scpt */; };
 		C062234A2016D81500724C4C /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06223492016D81500724C4C /* ScriptingBridge.framework */; };
 		C073AD5820165C5E0086C8F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073AD5720165C5E0086C8F4 /* AppDelegate.swift */; };
@@ -30,8 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C06223442016CC7D00724C4C /* copyCurrentPath.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = copyCurrentPath.scpt; sourceTree = "<group>"; };
-		C06223452016CCE500724C4C /* AppWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWorker.swift; sourceTree = "<group>"; };
+		C06223442016CC7D00724C4C /* copyCurrentPath.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyCurrentPath.scpt; sourceTree = "<group>"; };
+		C06223452016CCE500724C4C /* ScriptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptService.swift; sourceTree = "<group>"; };
 		C06223492016D81500724C4C /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		C073AD5420165C5E0086C8F4 /* PathToGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathToGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C073AD5720165C5E0086C8F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				C06223432016CBE700724C4C /* Scripts */,
 				C073AD5720165C5E0086C8F4 /* AppDelegate.swift */,
 				C073AD5920165C5E0086C8F4 /* ViewController.swift */,
-				C06223452016CCE500724C4C /* AppWorker.swift */,
+				C06223452016CCE500724C4C /* ScriptService.swift */,
 				C073AD5B20165C5E0086C8F4 /* Assets.xcassets */,
 				C073AD5D20165C5E0086C8F4 /* Main.storyboard */,
 				C073AD6020165C5E0086C8F4 /* Info.plist */,
@@ -179,7 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C073AD5A20165C5E0086C8F4 /* ViewController.swift in Sources */,
-				C06223462016CCE500724C4C /* AppWorker.swift in Sources */,
+				C06223462016CCE500724C4C /* ScriptService.swift in Sources */,
 				C073AD5820165C5E0086C8F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
