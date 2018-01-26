@@ -25,26 +25,4 @@ struct ScriptService {
         pasteboard.declareTypes([.string], owner: nil)
         pasteboard.setString(pathString, forType: .string)
     }
-    
-//    func finderCurrentPath() -> String? {
-//        guard let scriptUrl = Bundle.main.url(forResource: "copyCurrentPath", withExtension: "scpt"),
-//            let string = try? String(contentsOf: scriptUrl) else {
-//                return nil
-//        }
-//        
-//        let script = NSAppleScript(source: string)
-//        return script?.executeAndReturnError(nil).stringValue
-//    }
-//    
-//    func run() {
-//        guard let path = finderCurrentPath() else {
-//            return
-//        }
-//        
-//        let pasteboard = NSPasteboard.general
-//        pasteboard.declareTypes([.string], owner: nil)
-//        pasteboard.setString(path, forType: .string)
-//    }
-    
-    
 }
