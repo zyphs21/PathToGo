@@ -13,7 +13,6 @@
 		C06223472016CD7F00724C4C /* copyCurrentPath.scpt in Resources */ = {isa = PBXBuildFile; fileRef = C06223442016CC7D00724C4C /* copyCurrentPath.scpt */; };
 		C062234A2016D81500724C4C /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06223492016D81500724C4C /* ScriptingBridge.framework */; };
 		C073AD5820165C5E0086C8F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073AD5720165C5E0086C8F4 /* AppDelegate.swift */; };
-		C073AD5A20165C5E0086C8F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073AD5920165C5E0086C8F4 /* ViewController.swift */; };
 		C073AD5C20165C5E0086C8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C073AD5B20165C5E0086C8F4 /* Assets.xcassets */; };
 		C073AD5F20165C5E0086C8F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C073AD5D20165C5E0086C8F4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -39,10 +38,10 @@
 		C06223492016D81500724C4C /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		C073AD5420165C5E0086C8F4 /* PathToGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathToGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C073AD5720165C5E0086C8F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C073AD5920165C5E0086C8F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C073AD5B20165C5E0086C8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C073AD5E20165C5E0086C8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C073AD6020165C5E0086C8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C09FDBF2202DF2140081ADB4 /* PathToGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PathToGo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +92,9 @@
 		C073AD5620165C5E0086C8F4 /* PathToGo */ = {
 			isa = PBXGroup;
 			children = (
+				C09FDBF2202DF2140081ADB4 /* PathToGo.entitlements */,
 				C06223432016CBE700724C4C /* Scripts */,
 				C073AD5720165C5E0086C8F4 /* AppDelegate.swift */,
-				C073AD5920165C5E0086C8F4 /* ViewController.swift */,
 				C06223452016CCE500724C4C /* ScriptService.swift */,
 				C03540B7202D357000D7C979 /* ToastWindowController.swift */,
 				C03540B8202D357000D7C979 /* ToastWindowController.xib */,
@@ -185,7 +184,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C073AD5A20165C5E0086C8F4 /* ViewController.swift in Sources */,
 				C03540B9202D357000D7C979 /* ToastWindowController.swift in Sources */,
 				C06223462016CCE500724C4C /* ScriptService.swift in Sources */,
 				C073AD5820165C5E0086C8F4 /* AppDelegate.swift in Sources */,

@@ -17,10 +17,10 @@ class ViewController: NSViewController {
 
         ScriptService.copyCurrentFinderPath()
         
-//        makeToast("Copy Path to ClipBoard Success")
+        makeToast("Copy Path to ClipBoard Success")
         
         // 0.01
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             NSApplication.shared.terminate(self)
         }
     }

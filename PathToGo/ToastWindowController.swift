@@ -119,6 +119,7 @@ extension ToastWindowController {
     func didFadeOut() -> Void {
         if fadingOut {
             self.window?.orderOut(self)
+            NSApplication.shared.terminate(self)
         }
         fadingOut = false
     }
