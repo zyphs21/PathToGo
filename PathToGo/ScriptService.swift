@@ -25,4 +25,6 @@ struct ScriptService {
         pasteboard.declareTypes([.string], owner: nil)
         pasteboard.setString(pathString, forType: .string)
     }
+    
+    
 }
