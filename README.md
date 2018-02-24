@@ -17,3 +17,6 @@ macOS 10.12+
 
 you can download it from the [Release Page](https://github.com/HansonStudio/PathToGo/releases)
 
+## Notice
+
+please do not use it for commercial business and I reserve all right of  the icon of this project
