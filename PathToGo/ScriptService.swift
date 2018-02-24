@@ -11,8 +11,12 @@ import Cocoa
 struct ScriptService {
     
     static func copyCurrentFinderPath() {
+//        guard let scriptUrl = Bundle.main.path(forResource: "copyCurrentPath", ofType: "scpt"),
+//            let string = try? String(contentsOf: URL(fileURLWithPath: scriptUrl)) else {
+//                return
+//        }
         guard let scriptUrl = Bundle.main.path(forResource: "copyCurrentPath", ofType: "scpt"),
-            let string = try? String(contentsOf: URL(fileURLWithPath: scriptUrl)) else {
+            let script = NSAppleScript(contentsOf: URL(fileURLWithPath: scriptUrl), error: nil) else {
                 return
         }
 //        guard let scriptUrl = Bundle.main.url(forResource: "copyCurrentPath", withExtension: "scpt"),
@@ -20,8 +24,10 @@ struct ScriptService {
 //                return
 //        }
         
-        let script = NSAppleScript(source: string)
-        guard let pathString = script?.executeAndReturnError(nil).stringValue else {
+
+        
+//        let script = NSAppleScript(source: appleScript)
+        guard let pathString = script.executeAndReturnError(nil).stringValue else {
             return
         }
         
