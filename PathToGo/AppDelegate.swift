@@ -21,7 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        
     }
     
 }
@@ -31,7 +31,7 @@ extension AppDelegate {
         if toastWindowCtrl != nil {
             toastWindowCtrl.close()
         }
-        toastWindowCtrl = ToastWindowController(windowNibName: NSNib.Name(rawValue: "ToastWindowController"))
+        toastWindowCtrl = ToastWindowController(windowNibName: "ToastWindowController")
         toastWindowCtrl.message = message
         toastWindowCtrl.showWindow(self)
         //NSApp.activate(ignoringOtherApps: true)
