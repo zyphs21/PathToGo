@@ -15,7 +15,20 @@
 		C073AD5820165C5E0086C8F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073AD5720165C5E0086C8F4 /* AppDelegate.swift */; };
 		C073AD5C20165C5E0086C8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C073AD5B20165C5E0086C8F4 /* Assets.xcassets */; };
 		C073AD5F20165C5E0086C8F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C073AD5D20165C5E0086C8F4 /* Main.storyboard */; };
+		C077D328249220FD0019F2C2 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077D327249220FD0019F2C2 /* FinderSync.swift */; };
+		C077D32D249220FD0019F2C2 /* PathToGoFinderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C077D325249220FD0019F2C2 /* PathToGoFinderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C077D33824922D840019F2C2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C077D33724922D840019F2C2 /* Media.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C077D32B249220FD0019F2C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C073AD4C20165C5E0086C8F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C077D324249220FD0019F2C2;
+			remoteInfo = PathToGoFinderExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C073AD7A20165D170086C8F4 /* Embed App Extensions */ = {
@@ -24,6 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				C077D32D249220FD0019F2C2 /* PathToGoFinderExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +55,11 @@
 		C073AD5B20165C5E0086C8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C073AD5E20165C5E0086C8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C073AD6020165C5E0086C8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C077D325249220FD0019F2C2 /* PathToGoFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PathToGoFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C077D327249220FD0019F2C2 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		C077D329249220FD0019F2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C077D32A249220FD0019F2C2 /* PathToGoFinderExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PathToGoFinderExtension.entitlements; sourceTree = "<group>"; };
+		C077D33724922D840019F2C2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C09FDBF2202DF2140081ADB4 /* PathToGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PathToGo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +69,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C062234A2016D81500724C4C /* ScriptingBridge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C077D322249220FD0019F2C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C073AD5620165C5E0086C8F4 /* PathToGo */,
+				C077D326249220FD0019F2C2 /* PathToGoFinderExtension */,
 				C073AD5520165C5E0086C8F4 /* Products */,
 				C06223482016D81400724C4C /* Frameworks */,
 			);
@@ -85,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				C073AD5420165C5E0086C8F4 /* PathToGo.app */,
+				C077D325249220FD0019F2C2 /* PathToGoFinderExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +133,17 @@
 			path = PathToGo;
 			sourceTree = "<group>";
 		};
+		C077D326249220FD0019F2C2 /* PathToGoFinderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C077D327249220FD0019F2C2 /* FinderSync.swift */,
+				C077D329249220FD0019F2C2 /* Info.plist */,
+				C077D32A249220FD0019F2C2 /* PathToGoFinderExtension.entitlements */,
+				C077D33724922D840019F2C2 /* Media.xcassets */,
+			);
+			path = PathToGoFinderExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,11 +159,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				C077D32C249220FD0019F2C2 /* PBXTargetDependency */,
 			);
 			name = PathToGo;
 			productName = PathToGo;
 			productReference = C073AD5420165C5E0086C8F4 /* PathToGo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C077D324249220FD0019F2C2 /* PathToGoFinderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C077D32E249220FD0019F2C2 /* Build configuration list for PBXNativeTarget "PathToGoFinderExtension" */;
+			buildPhases = (
+				C077D321249220FD0019F2C2 /* Sources */,
+				C077D322249220FD0019F2C2 /* Frameworks */,
+				C077D323249220FD0019F2C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PathToGoFinderExtension;
+			productName = PathToGoFinderExtension;
+			productReference = C077D325249220FD0019F2C2 /* PathToGoFinderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -132,7 +189,7 @@
 		C073AD4C20165C5E0086C8F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = HansonStudio;
 				TargetAttributes = {
@@ -145,6 +202,10 @@
 								enabled = 0;
 							};
 						};
+					};
+					C077D324249220FD0019F2C2 = {
+						CreatedOnToolsVersion = 11.5;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -162,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				C073AD5320165C5E0086C8F4 /* PathToGo */,
+				C077D324249220FD0019F2C2 /* PathToGoFinderExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +240,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C077D323249220FD0019F2C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C077D33824922D840019F2C2 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,7 +261,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C077D321249220FD0019F2C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C077D328249220FD0019F2C2 /* FinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C077D32C249220FD0019F2C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C077D324249220FD0019F2C2 /* PathToGoFinderExtension */;
+			targetProxy = C077D32B249220FD0019F2C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C073AD5D20165C5E0086C8F4 /* Main.storyboard */ = {
@@ -320,6 +406,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PathToGo/PathToGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XC238MH24L;
@@ -337,6 +424,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PathToGo/PathToGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XC238MH24L;
@@ -345,6 +433,47 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HansonStudio.PathToGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C077D32F249220FD0019F2C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = PathToGoFinderExtension/PathToGoFinderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XC238MH24L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PathToGoFinderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HansonStudio.PathToGo.PathToGoFinderExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C077D330249220FD0019F2C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = PathToGoFinderExtension/PathToGoFinderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XC238MH24L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PathToGoFinderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HansonStudio.PathToGo.PathToGoFinderExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -366,6 +495,15 @@
 			buildConfigurations = (
 				C073AD6520165C5E0086C8F4 /* Debug */,
 				C073AD6620165C5E0086C8F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C077D32E249220FD0019F2C2 /* Build configuration list for PBXNativeTarget "PathToGoFinderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C077D32F249220FD0019F2C2 /* Debug */,
+				C077D330249220FD0019F2C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
