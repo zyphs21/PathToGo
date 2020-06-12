@@ -37,29 +37,14 @@ class FinderSync: FIFinderSync {
     }
     
     @IBAction func copyPlainText(_ sender: AnyObject?) {
-        guard let target = FIFinderSyncController.default().targetedURL()
-            , let selectedItems = FIFinderSyncController.default().selectedItemURLs() else { return }
-        
-        var itemURLString = ""
-        for (index, item) in selectedItems.enumerated() {
-            itemURLString = itemURLString + item.path
-            if index != selectedItems.count - 1 {
-                itemURLString = itemURLString + "\n"
-            }
-        }
-        
-        // When Only select the target folder, the selectedItems is empty
-        // 仅仅选中 Target fodler 的时候 selectedItems 是空的
-        if itemURLString.count == 0 {
-            itemURLString = target.path
-        }
-        
-        let pasteboard = NSPasteboard.general
-        pasteboard.declareTypes([.string], owner: nil)
-        pasteboard.setString("\(itemURLString)", forType: .string)
+        copyPaths()
     }
     
     @IBAction func copySpaceBackslashText(_ sender: AnyObject?) {
+        copyPaths(shouldAddSpaceBackSlash: true)
+    }
+    
+    private func copyPaths(shouldAddSpaceBackSlash: Bool = false) {
         guard let target = FIFinderSyncController.default().targetedURL()
             , let selectedItems = FIFinderSyncController.default().selectedItemURLs() else { return }
         
@@ -76,11 +61,16 @@ class FinderSync: FIFinderSync {
         if itemURLString.count == 0 {
             itemURLString = target.path
         }
+        var result: String
+        if shouldAddSpaceBackSlash {
+            result = itemURLString.replacingOccurrences(of: " ", with: "\\ ")
+        } else {
+            result = itemURLString
+        }
         
-        let finalString = itemURLString.replacingOccurrences(of: " ", with: "\\ ")
         let pasteboard = NSPasteboard.general
         pasteboard.declareTypes([.string], owner: nil)
-        pasteboard.setString("\(finalString)", forType: .string)
+        pasteboard.setString("\(result)", forType: .string)
     }
 }
 
