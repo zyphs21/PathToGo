@@ -11,23 +11,15 @@ import Cocoa
 struct ScriptService {
     
     static func copyCurrentFinderPath() {
-//        guard let scriptUrl = Bundle.main.path(forResource: "copyCurrentPath", ofType: "scpt"),
-//            let string = try? String(contentsOf: URL(fileURLWithPath: scriptUrl)) else {
-//                return
-//        }
-        guard let scriptUrl = Bundle.main.path(forResource: "copyCurrentPath", ofType: "scpt"),
-            let script = NSAppleScript(contentsOf: URL(fileURLWithPath: scriptUrl), error: nil) else {
+        // Bundle.main.url(forResource: "copyCurrentPath", withExtension: "scpt")
+        // String(contentsOf: URL(fileURLWithPath: scriptUrl))
+        guard let scriptUrl = Bundle.main.path(forResource: "copyCurrentPath", ofType: "scpt")
+            , let script = NSAppleScript(contentsOf: URL(fileURLWithPath: scriptUrl), error: nil) else {
+                print("---No Script Source File---")
                 return
         }
-//        guard let scriptUrl = Bundle.main.url(forResource: "copyCurrentPath", withExtension: "scpt"),
-//            let string = try? String(contentsOf: scriptUrl) else {
-//                return
-//        }
-        
-
-        
-//        let script = NSAppleScript(source: appleScript)
         guard let pathString = script.executeAndReturnError(nil).stringValue else {
+            print("---Script Execute Error---")
             return
         }
         
@@ -35,6 +27,4 @@ struct ScriptService {
         pasteboard.declareTypes([.string], owner: nil)
         pasteboard.setString(pathString, forType: .string)
     }
-    
-    
 }
