@@ -19,7 +19,7 @@ Enable FinderExtension | Add Finder Extension
 
 2. Or You can just drag PathToGo to Finder ToolBar
 
-![DragToToolBar](https://cdn.jsdelivr.net/gh/HansonStudio/PathToGo/screenshots/dragToToolBar.jpg)
+![DragToToolBar](https://cdn.jsdelivr.net/gh/HansonStudio/PathToGo@master/screenshots/dragToToolBar.jpg)
 
 ## Update Notes
 
